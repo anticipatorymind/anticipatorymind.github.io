@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* https://www.w3schools.com/colors/colors_picker.asp */
+
+    --white-0: #000000;
+
+    --white-10: #1a1a1a;
+    --white-15: #262626;
+    --white-20: #333333;
+    --white-30: #4d4d4d;
+
+    --white-100: #ffffff;
+}
+
+body {
+    background-color: var(--white-0);
+    color: var(--white-100);
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+}
+
+.header,
+.header-container,
+.main,
+.main-container,
+.post,
+.post-container {
+    border: 0px;
+    border-style: solid;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.header,
+.main,
+.post {
+    margin: 2px;
+    background-color: var(--white-10);
+}
+
+.header-container,
+.main-container,
+.post-container {
+    background-color: var(--white-20)
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    font-family: 'Nabla', cursive;
+    padding: 3px;
+    border: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-container {
+    border: 0px;
+    border-style: solid;
+    padding: 3px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: var(--white-30);
+}
+
+.btn-container:hover {
+    background-color: var(--white-100);
+    color: var(--white-0);
+}
+
+.main,
+.post {
+    text-align: center;
+}
+
+.title,
+.name,
+.bio {
+    display: inline-block;
+}
+
+.title {
+    color: var(--white-15);
+}
+
+.main-container {
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.detail-list li {
+    margin-bottom: 5px;
+}
+
+.social-list {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.social-list .btn-container {
+    width: 120px;
+}
+
+.post-data {
+    border: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: var(--white-30);
+}
+
+.post-data:hover {
+    background-color: var(--white-100);
+    color: var(--white-0);
+}
+
+
+.post-list .btn-container {
+    background-color: var(--white-20);
+}
+
+@media screen and (max-width: 570px) {
+
+    .social-list {
+        display: block;
+    }
+
+    .social-list li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
