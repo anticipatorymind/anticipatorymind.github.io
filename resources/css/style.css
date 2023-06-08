@@ -77,6 +77,10 @@ a {
     color: var(--white-0);
 }
 
+.header-container .btn-container:hover {
+    background-color: var(--white-30);
+}
+
 .main,
 .post {
     text-align: center;
