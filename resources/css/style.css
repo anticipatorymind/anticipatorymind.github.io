@@ -1,9 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 :root {
+    --font-mono: 'Share Tech Mono', monospace;
+
     /* https://www.w3schools.com/colors/colors_picker.asp */
 
     --white-0: #000000;
@@ -16,37 +13,56 @@
     --white-100: #ffffff;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: var(--white-0);
     color: var(--white-100);
-    font-family: 'Space Mono', monospace;
     letter-spacing: 1px;
+    word-wrap: break-word;
     word-break: break-all;
+    min-width: 383px;
+    font-family: var(--font-mono);
 }
 
-.header,
-.header-container,
-.main,
-.main-container,
-.post,
-.post-container {
+.outer-box {
     border: 0px;
     border-style: solid;
-    padding: 5px;
     border-radius: 5px;
-}
-
-.header,
-.main,
-.post {
-    margin: 2px;
+    padding: 5px;
+    margin: 5px;
     background-color: var(--white-10);
 }
 
-.header-container,
-.main-container,
-.post-container {
-    background-color: var(--white-20)
+.pin {
+    border: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+    background-color: var(--white-0);
+    color: var(--white-100);
+    margin-bottom: 5px;
+}
+
+.inner-box {
+    border: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--white-20);
+}
+
+.logo {
+    border: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+    background-color: var(--white-10);
 }
 
 a {
@@ -54,93 +70,62 @@ a {
     color: inherit;
 }
 
-.logo {
-    font-family: 'Nabla', cursive;
-    padding: 5px;
-    border: 0px;
-    border-style: solid;
-    border-radius: 5px;
-    display: inline-block;
-    background-color: var(--white-30);
-}
-
-.btn-container {
-    border: 0px;
-    border-style: solid;
-    padding: 5px;
-    display: inline-block;
-    border-radius: 5px;
-    background-color: var(--white-30);
-}
-
-.btn-container:hover {
-    background-color: var(--white-100);
-    color: var(--white-0);
-}
-
-.main,
-.post {
-    text-align: center;
-}
-
-.title,
-.name,
-.bio {
-    display: inline-block;
-}
-
-.title {
-    color: var(--white-15);
-}
-
-.main-container {
-    padding: 5px;
-}
-
 ul {
     list-style: none;
 }
 
-.detail-list li {
-    margin-bottom: 5px;
-}
-
-.social-list {
-    display: inline-flex;
-    gap: 10px;
-}
-
-.social-list .btn-container {
-    width: 120px;
-}
-
-.post-data {
+.btn-box {
     border: 0px;
     border-style: solid;
     border-radius: 5px;
-    margin-bottom: 5px;
     padding: 5px;
-    background-color: var(--white-30);
+    background-color: var(--white-10);
 }
 
-.post-data:hover {
+.btn-box:hover {
     background-color: var(--white-100);
     color: var(--white-0);
 }
 
+.main-01,
+.main-02,
+.main-03 {
+    text-align: center;
+}
 
-.post-list .btn-container {
-    background-color: var(--white-20);
+.main-01-list li,
+.main-02-list li,
+.main-03-list li {
+    margin-bottom: 5px;
+}
+
+.avatar {
+    margin-top: 10px;
+}
+
+.name,
+.status,
+.linkedin,
+.github,
+.hackthebox,
+.certificate {
+    display: inline-block;
+}
+
+.social-list,
+.main-02-list {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.main-02-list {
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 570px) {
 
-    .social-list {
+    .social-list,
+    .main-02-list {
         display: block;
-    }
-
-    .social-list li {
-        margin-top: 5px;
-        margin-bottom: 5px;
     }
 }
