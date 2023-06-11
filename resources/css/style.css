@@ -105,9 +105,7 @@ ul {
 
 .name,
 .status,
-.linkedin,
-.github,
-.hackthebox,
+.link,
 .certificate {
     display: inline-block;
 }
