@@ -11,11 +11,6 @@
     --white-30: #4d4d4d;
 
     --white-100: #ffffff;
-
-    --white-90: #e6e6e6;
-    --white-85: #d9d9d9;
-    --white-80: #cccccc;
-    --white-70: #b3b3b3;
 }
 
 * {
@@ -24,8 +19,8 @@
 }
 
 body {
-    background-color: var(--white-100);
-    color: var(--white-0);
+    background-color: var(--white-0);
+    color: var(--white-100);
     letter-spacing: 1px;
     word-wrap: break-word;
     word-break: break-all;
@@ -39,7 +34,7 @@ body {
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
-    background-color: var(--white-90);
+    background-color: var(--white-10);
 }
 
 .pin {
@@ -48,8 +43,8 @@ body {
     border-radius: 5px;
     padding: 5px;
     display: inline-block;
-    background-color: var(--white-100);
-    color: var(--white-0);
+    background-color: var(--white-0);
+    color: var(--white-100);
     margin-bottom: 5px;
 }
 
@@ -58,7 +53,7 @@ body {
     border-style: solid;
     border-radius: 5px;
     padding: 5px;
-    background-color: var(--white-80);
+    background-color: var(--white-20);
 }
 
 .logo {
@@ -67,7 +62,7 @@ body {
     border-radius: 5px;
     padding: 5px;
     display: inline-block;
-    background-color: var(--white-90);
+    background-color: var(--white-10);
 }
 
 a {
@@ -84,12 +79,12 @@ ul {
     border-style: solid;
     border-radius: 5px;
     padding: 5px;
-    background-color: var(--white-90);
+    background-color: var(--white-10);
 }
 
 .btn-box:hover {
-    background-color: var(--white-0);
-    color: var(--white-100);
+    background-color: var(--white-100);
+    color: var(--white-0);
 }
 
 .main-01,
