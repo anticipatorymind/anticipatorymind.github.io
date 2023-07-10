@@ -89,14 +89,20 @@ ul {
 
 .main-01,
 .main-02,
-.main-03 {
+.main-03,
+.main-04 {
     text-align: center;
 }
 
 .main-01-list li,
 .main-02-list li,
-.main-03-list li {
+.main-03-list li,
+.main-04-list li {
     margin-bottom: 5px;
+}
+
+.social-list li {
+    margin: 0;
 }
 
 .avatar {
@@ -106,7 +112,8 @@ ul {
 .name,
 .status,
 .link,
-.certificate {
+.certificate,
+.cv {
     display: inline-block;
 }
 
@@ -126,4 +133,9 @@ ul {
     .main-02-list {
         display: block;
     }
+
+    .social-list li {
+        margin-bottom: 5px;
+    }
+
 }
